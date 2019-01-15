@@ -1,0 +1,261 @@
+﻿html {
+  box-sizing: border-box;
+  min-width:100%;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+body{
+    color: #333; 
+    line-height: 1.5;
+    font-family: 'Montserrat', sans-serif;
+    margin: 0 auto;
+}
+
+/*
+******************************************************************
+                  Navigation
+******************************************************************
+*/
+.nav.navbar-nav li a {
+   color: #000000;
+ }
+
+.edit-navbar{
+    background-color: #fff;
+    height: 50px;
+    border-bottom: 0px;
+    transition: all 0.6s ease-out;
+}
+
+.edit-navbar .navbar-header .navbar-brand{
+    color: #333;
+    font-weight: bold;
+    user-select: none;
+}
+
+/*.navbar.affix {
+    position: fixed;
+    top:0;
+    width:100%;
+    background-color: rgba(0,0,0,0.78);
+}*/
+
+.nav-logo{
+    width: 60px;
+    height: 50px;
+    margin-right:0;
+    transition: all 0.6s ease-out;
+}
+
+.nav-logo img{
+    position: absolute;
+    top: 0;
+}
+
+/*jquery darker when scrolling*/
+.edit-navbar.darker{
+    background-color: rgba(0,0,0,0.78);
+    height: 50px;
+}
+
+.edit-navbar.darker .navbar-collapse.collapse .nav.navbar-nav li a{
+    color: #fff;
+}
+
+.edit-navbar.darker .navbar-header .navbar-brand{
+    color: #fff;
+}
+
+
+/*nav item hover*/
+.hvr-underline-from-center {
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px transparent;
+  position: relative;
+  overflow: hidden;
+}
+
+.hvr-underline-from-center:before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  left: 50%;
+  right: 50%;
+  bottom: 0;
+  background: #e54243;
+  height: 4px;
+  -webkit-transition-property: left, right;
+  transition-property: left, right;
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-timing-function: ease-out;
+  transition-timing-function: ease-out;
+}
+.hvr-underline-from-center:hover:before, .hvr-underline-from-center:focus:before, .hvr-underline-from-center:active:before {
+  left: 0;
+  right: 0;
+}
+
+.navbar-header h1{
+    font-variant: small-caps;
+    font-size: 1em;
+    font-weight: bold;
+}
+
+.light{
+    font-weight: normal;
+}
+
+#nav-item{
+    color:#000000;
+}
+
+
+/*
+******************************************************************
+                  Header
+******************************************************************
+*/
+
+.page-marque{
+    background-image: /*linear-gradient(rgba(0, 160, 155, 0.23), rgba(200, 30, 50, 0.23)),*/ url(../img/slideTest.jpg);
+    /*background-color:#f8f8f8;*/
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 30vw;
+    margin-bottom: 2%;
+    padding: 3em;
+    width: 100%;
+    text-align:center;
+}
+
+.page-marque img{
+    user-select:none;
+    margin-top:1em;
+}
+.page-marque h1{
+    position: relative;
+    left:0;
+    right:0;
+    margin:0 auto;
+    font-size: 13vw;
+    color: #3e3e3e;
+    margin-bottom:0.2em;
+    text-shadow: 0px 15px 1px #fff;
+    z-index: 5;
+}
+
+
+/*Wave animation*/
+
+.wave{
+    background-position: 24vw 2vw;
+    border-radius: 150px;
+    background-repeat: repeat-x;
+    background-size: cover;
+    animation: animate 5s linear infinite;
+    background-color: transparent;
+    background-image: url('../img/svg/wave.svg');
+    background-attachment: scroll;
+}
+
+@keyframes animate{
+    0%{
+        background-position: 150px 60px;
+    }
+    25%{
+        background-position: 800px 80px;
+    }
+    50%{
+        background-position: 1000px 100px;
+    }
+    75%{
+        background-position: 1300px 125px;
+    }
+    100%{
+        background-position: 2000px 70px;
+    }
+}
+
+.straw-art{
+    width: 8%;
+    position: absolute;
+    left: 28vw;
+    top: 5em;
+    z-index: 1;
+}
+
+/*Buttons*/
+.banner-button{
+    font-family: 'montserrat';
+    font-variant: small-caps;
+    font-size: 0.8em;
+    letter-spacing: .25em;
+    color: #3e3e3e;
+    border: 1px #3e3e3e solid;
+    /*border-radius: 2px;*/
+    padding: 1rem 2rem;  
+    position: relative;
+    text-decoration: none;    
+}
+
+.banner-button:hover{
+    /*color: #e35e5f;*/
+    color: #fff;
+    background-color: #e54243;
+    border: 1px #e54243 solid;
+    text-decoration: none;
+}
+
+/*
+******************************************************************
+                  main
+******************************************************************
+*/
+
+main{
+    margin: 0 auto;
+    margin-top: 2em;
+    padding:0 0.625em;
+    height:1000px;
+}
+
+
+/*
+******************************************************************
+                  footer
+******************************************************************
+*/
+hr{
+    /*color: #000;
+    background-color: #000;
+    height: 4px;*/
+    height: 12px;
+    border: 0;
+    box-shadow: inset 0 12px 12px -12px rgba(0, 0, 0, 0.5);
+}
+
+footer{
+    text-align: left;
+}
+
+footer h4{
+    font-weight:bold;
+}
+
+.panel{
+    display: flex;
+    justify-content:center;
+    align-content:space-between;
+}
+
+#copyright{
+    font-size: 0.8em;
+}
+
