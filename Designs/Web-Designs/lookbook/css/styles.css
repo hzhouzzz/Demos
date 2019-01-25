@@ -1,0 +1,368 @@
+ 
+  body{
+      font-size:100%;
+      color: #333; 
+      line-height: 1.5;
+      font-family: 'Montserrat', sans-serif;
+      text-align: center;
+      margin: 0 auto;
+      height: 100%;
+
+    
+}
+
+ /*
+******************************************************************
+                           NAVIGATION
+******************************************************************
+*/
+.menu{
+    width:100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+  
+.menu h1{
+    font-variant: small-caps;
+    font-size: 1.2em;
+    font-weight: bold;
+}
+
+.light{
+    font-weight: normal;
+}
+
+.menu-items {
+    padding: 1% 2%;
+} 
+
+.menu-items li{ 
+    display: inline-block;
+}
+
+.menu-items a {
+    color: #333;
+    text-decoration: none; 
+    padding: 1rem; 
+}
+
+.menu-item a{
+    font-variant: small-caps;
+}
+
+.menu-item a:hover{
+	color: #00c8c8;
+}
+
+ /*
+******************************************************************
+                    Header
+******************************************************************
+*/
+
+.page-marque{
+    background-image:url("../img/photobook-bg.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: #f8f8f8;
+    height: 640px;
+    margin-bottom: 1%;
+    text-align: center;
+    margin: 0 auto;
+}
+
+#title{
+    font-size: 18em;
+    font-weight: bold;  
+    color: #575153;
+    position: relative;
+    letter-spacing: 0.8em;
+    text-indent: 0.8em;
+  }
+  
+.banner-button{
+    font-family: 'montserrat';
+    font-variant: small-caps;
+    font-size: 0.8em;
+    letter-spacing: .25em;
+    color: #333;
+    border: 1px #333 solid;
+    padding: 1rem 2rem;  
+    position: relative;
+    left: 20%;
+    text-decoration: none;
+}
+
+.banner-button:hover{
+    color: #01e0e0;
+    border: 1px #01e0e0 solid;
+}
+
+ /*
+******************************************************************
+                    Product Nav
+******************************************************************
+*/
+.product-items{
+    width:100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin-bottom: 3%;
+}
+
+.product-item{
+    margin-right: 2%;
+}
+
+.product-item:last-of-type{
+    margin-right: 0;
+}
+
+.product-item a{
+    color: #333;
+    text-decoration: none;
+    font-variant: small-caps;
+}
+
+.product-item a:hover{
+	color: #00c8c8;
+}
+
+ /*
+******************************************************************
+                    TYPOGRAPHY
+******************************************************************
+*/
+ 
+/* .material-icons{
+    line-height: 0;
+    vertical-align:middle;
+    color:#c4c4c4;
+} */
+ 
+ /*
+******************************************************************
+                           CONTROLS
+******************************************************************
+*/
+/* .control-strip{
+    position: fixed;
+    top:0;
+    left:0;
+    width:100%;
+    background-color:#fff;
+    box-shadow: 0 0 8px 1px rgba(0,0,0,0.9);
+    padding:0.5em;
+    min-width:320px;
+    z-index: 99999;
+    user-select: none;
+}
+.icon-view{
+    display:flex;
+    justify-content: space-between;
+} */
+/* 
+.list-view{
+    display:none;
+} */
+
+.large-info{
+    display: block;
+    color: #ccc;
+}
+.small-info{
+    color: #ccc;
+	display: none;
+}
+
+.large-info:hover, .small-info:hover{
+    color: #01e0e0;
+}
+figure{
+    position: relative;
+}
+
+.icons{
+    color:#ccc;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+}
+
+
+ /*
+******************************************************************
+                       CSS GRID LAYOUT BASICS
+******************************************************************
+*/
+main{
+    margin: 0 auto;
+    margin-top: 3.125em;
+    padding:0 0.625em;
+    max-width: 60em;
+}
+
+.grid-cell img{
+    width:100%;
+}
+
+.feature{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto auto;
+    grid-column-gap: 1em;
+    grid-row-gap: 1em;
+    margin-right: 1em;
+}
+
+.feature:last-of-type{
+    margin-right: 0;
+}
+
+.x2{
+    grid-column: span 2;
+}
+
+ /*
+**************************s****************************************
+                       FOOTER
+******************************************************************
+*/
+footer{
+    margin: 2% auto;
+    text-align: center;
+    background-color: #f8f8f8;
+    margin-bottom: 0;
+}
+.footer-link{
+    display: flex;
+    width: 60%;
+    justify-content: space-around;
+    align-content: center;
+    font-size: 0.8em;
+    margin: 0 auto;
+}
+
+.links h1{
+    margin-top: 10%;
+    font-variant: small-caps;
+    font-size: 1.5em;
+    font-weight: bold;
+    color: #333;
+}
+
+.links a{
+    text-decoration: none;
+    color: #333;
+}
+
+.links a:hover{
+    color: #01e0e0;
+}
+
+.footer-content{
+    display: flex;
+    width: 60%;
+    justify-content: space-around;
+    align-content: center;
+    margin: 2% auto;
+}
+
+.footer-content-left{
+    color: #fff;
+    font-variant: small-caps;
+    font-size: 2em;
+    padding: 3% 7%;
+    background-color: #333;
+}
+
+.footer-content-right{
+    padding: 3% 7%;
+    background-color: #01e0e0;
+}
+
+.social-icons li{
+    margin-right: 1em;
+    display: inline-block;
+}
+
+.social-icons li:last-of-type{
+    margin-right: 0;
+}
+
+.large-social{
+    display: block;
+    color: #fff;
+}
+.small-social{
+    color: #ffffff;
+	display: none;
+}
+
+.large-social:hover, .small-social:hover{
+    color: #ccc;
+}
+
+.footer-black{
+    background-color: #333;
+    color: #999;
+    height: 30px;
+    padding: 0.2em;
+    text-align: center;
+}
+  
+@media(min-width: 650px){  
+
+    .feature-layout{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+   
+	.product-item a{
+		font-size: 1%;
+	}
+	.product-item{
+		display: inline-block;
+	}
+	.large-info{
+		display: none;
+	}
+	.small-info{
+		display: block;
+	}
+}
+
+@media(max-width: 650px){
+    .page-marque{
+		display: none;
+		background-image: none;
+	}
+	.icon-switch{
+		display: block;
+		text-align: right;
+	}
+	.menu-item {
+		display: list-item;
+		width: 100%;
+		margin: .5rem 0;
+	}
+	.menu{
+		text-align: center;
+		display: block;
+	}
+	.menu.menu-items .menu-item{
+		display: none;
+	}
+	.menu-items { 
+		padding-top: 4%; 
+	}        
+	.menu-item a:hover {  color: #00c8c8; }   
+	.menu-item:hover{
+		background: #eee;
+	}  
+	main nav{
+		width: 90%;
+	}
+}

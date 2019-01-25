@@ -1,0 +1,330 @@
+/*
+    1. Site Navigation
+
+*/
+body{
+    font-size:125%;
+    font-family: "Lato", sans-serif;   
+    line-height: 1.5;
+    /*
+    fixes margin collapse
+    margin:-1px;
+    padding:1px;
+    */
+}
+/*
+******************************************************************
+            SITE NAVIGATION
+1. keep ~  60 to 80px
+******************************************************************
+*/
+nav.site-nav{
+    box-shadow: 0 0 5px 1px rgba(0,0,0,0.15);
+    padding: 0.5em;
+    position:fixed;
+    top:0;
+    width:100%;
+    background-color:#fff;
+    z-index:999999;
+    min-width:800px;
+}
+.nav-logo{
+   display: inline-flex;
+}
+.nav-logo h1{
+    color: #a7b3dd;
+}
+.site-nav ul{
+   float:right;
+   list-style-type: none;
+}
+.site-nav li{
+    display:inline-block;
+    margin-right:3em;
+}
+/* love hate */
+a, a:link, a:visited, a:hover, a:active{
+    color:#a7b3dd;
+    text-decoration: none;
+} 
+a:hover{
+    color:black;
+}
+
+/*
+******************************************************************
+                   YOUR  GALLERY SLIDES STYLES
+******************************************************************
+*/
+.slide-1{
+    background-image: url(../img/slide1.jpg);   
+    background-size: 110%;
+    background-position: top left;
+    padding-top: 5%;
+    padding-right: 10%;
+    text-align: center;
+}
+.slide-1 h1{
+    font-size: 3em;
+    color: white;
+}
+.option{
+    color: white;
+    padding: 0.5em;
+    display: inline-flex;
+}
+.option p{
+    margin: 0 10px;
+    color: white;
+    font-size: 0.9em;
+}
+
+.buttons{
+    margin-top: 3em;
+    display: inline-flex;
+}
+.banner-button-red a{
+    width: auto;
+    max-width: 100%;
+    margin: 0 auto;
+    background-image: linear-gradient(to bottom, rgba(243,101,114,1), rgba(202,45,45,1));
+    border-radius: 8px;
+    padding: 15px;
+    width: 135px;
+    font-size: 0.8em;
+    color: white;
+    margin-right: 1em;
+}
+.banner-button-blue a{
+    width: auto;
+    max-width: 100%;
+    margin: 0 auto;
+    background-image: linear-gradient(to bottom, rgba(144,117,234,1), rgba(52,68,152,1) );
+    border-radius: 8px;
+    padding: 15px;
+    width: 135px;
+    font-size: 0.8em;
+    color: white;
+}
+
+.slide-2{
+    background-image: url(../img/slide2.jpg);
+}
+.slide-3{
+    background-image: url(../img/slide3.jpg);
+}
+
+main{
+	margin: 0 auto;
+    width: 50%;
+    margin-top: 5%;
+	margin-bottom: 5%;
+}
+
+.site-section{
+	position: relative;
+	left: 0%;
+    right: 0%;
+	display: inline-flex;
+	text-align: center;
+	margin-top: 5%;
+}
+
+main section{
+	width: 33%;
+	margin: 0 5%;
+	text-align: center;
+}
+
+h2{
+    margin-top: 1em;
+	font-size: 1em;
+	font-family: "Aaargh";
+	color: #666;
+	line-height: 1.5;
+}
+
+p{
+	color: #666;
+	line-height: 1.5;
+	margin-bottom: 5%;
+	font-size: 0.8em;
+}
+
+.site-section, .project-section{
+	margin-bottom: 5%;
+}
+
+.section-logo{
+    display: inline-block;
+    border-radius: 100px;
+    box-shadow: 0px 0px 10px #a0f1a2;
+    padding: 2em 3em;
+    color: #a0f1a2;
+}
+
+.section-logo-2{
+    display: inline-block;
+    border-radius: 100px;
+    box-shadow: 0px 0px 10px #ff9726;
+    padding: 2em 1.8em;
+    color: #ff9726;
+}
+
+.section-logo-3{
+    display: inline-block;
+    border-radius: 100px;
+    box-shadow: 0px 0px 10px #26c7ff;
+    padding: 2em 1.6em;
+    color: #26c7ff;
+}
+
+/* Project Section */
+.project-section{
+    text-align: center;
+}
+.PS-title{
+    font-size: 1.5em;
+    margin-bottom: 1em;
+}
+.PS-title h2{
+    color: #969fa5;
+}
+.fa-desktop{
+    font-size: 1.5em;
+    margin-right: 0.5em;
+}
+.PS-images img{
+	width: 22.4%;
+	margin: 1% auto;
+	margin-left: 3%;
+}
+
+#PS-img1{
+	margin-left: 0;
+}
+
+.fa-arrow-alt-circle-left{
+	color: #ccc;
+	margin-right: 1%;
+}
+
+.fa-arrow-circle-right{
+	color: #ccc;
+	margin-left: 1%;
+}
+
+/* social media section */
+.social-midea-section{
+	display: inline-flex;
+	margin: 0 auto;
+	text-align: center;
+}
+
+.SM-title{
+    font-size: 1.5em;
+    margin-top: 4em;
+    margin-bottom: 1em;
+    text-align: center;
+}
+.SM-title h2{
+    color: #969fa5;
+}
+.fa-share-alt{
+    font-size: 2em;
+    margin-right: 0.5em;
+}
+.SMSForm img{
+	width: 35%;
+	float: left;
+	display: inline-block;
+	margin: .5rem;
+}
+
+.blog-news-text{
+	width: 60%;
+	display: inline-block;
+}
+
+.blog-news-text h2{
+	font-size: 0.8em;
+	font-weight: bold;
+}
+
+.blog-news-text p{
+	color: #999;
+}
+
+.SMS-link p{
+	font-size: 0.7em;
+	color: skyblue;
+	font-family: "Aaargh";
+}
+
+.SMScol1{
+	position: relative;
+	left: 0;
+	width: 47.5%;
+	margin-right: 2.5%;
+	text-align: left;
+	padding: 0 2%;
+}
+
+.SMScol2{
+	position: relative;
+	right: 0;
+	width: 47.5%;
+	margin-left: 2.5%;
+	text-align: left;
+	padding: 0 2%;
+}
+
+.fa-rss{
+	color: #f9993c;
+}
+
+.fa-twitter{
+	color: #00aced;
+}
+
+.twitter-detial span{
+	font-weight: bold;
+}
+
+/* footer */
+
+footer{
+	left: 0;
+	right: 0;
+	width: 50%;
+	border-top: .1rem solid #ccc;
+	background: #fff;
+	bottom: 0;
+	font-size: 1em;
+	margin: 0 auto;
+    padding-top:1%; 
+}
+
+.attention{
+	float: left;
+}
+
+.social-icons{
+	float: right;
+}
+
+.fa-twitter-square{
+	color: skyblue;
+}
+
+.fa-facebook-square{
+	color: dodgerblue;
+}
+
+.fa-instagram{
+	color: #2686b9;
+}
+
+.fa-basketball-ball{
+	color: #f072a2;
+}

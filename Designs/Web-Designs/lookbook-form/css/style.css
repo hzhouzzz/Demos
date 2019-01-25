@@ -1,0 +1,488 @@
+html { 
+    font-size: 16px; 
+    font-size: 62.5%;
+}
+
+body{
+    font-size:100%;
+    color: #333; 
+    line-height: 1.5;
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+    margin: 0 auto;
+    height: 100%;
+
+  
+}
+
+/*
+******************************************************************
+                         NAVIGATION
+******************************************************************
+*/
+.menu{
+    widows: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.menu h1{
+    font-variant: small-caps;
+    font-size: 2em;
+    font-weight: bold;
+}
+
+.menu h1, .menu span{
+    margin-right: 45%;
+}
+
+.light{
+    font-weight: normal;
+}
+
+.menu-items {
+    font-size: 1.5em;
+    justify-content: flex-end;
+    padding: 1% 2%;
+} 
+
+.menu-items li{ 
+    display: inline-block;
+}
+
+.menu-items a {
+    color: #333;
+    text-decoration: none; 
+    padding: 1em; 
+}
+
+.menu-item a{
+    font-variant: small-caps;
+}
+
+.menu-item a:hover{
+     color: #00c8c8;
+}
+
+/*
+******************************************************************
+                  Header
+******************************************************************
+*/
+
+.page-marque{
+    background-image:url("../img/lookbook-header-bg.jpg");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position: center;
+    height: 310px;
+    padding: 3em;
+}
+
+#title{
+    margin: 35px;
+    font-weight: bold;
+    font-variant: small-caps;
+    font-size: 2.8em;
+    position: relative;
+    color: #fff;
+}
+  
+#text{
+    font-variant: small-caps;
+    font-size: 1.8em;
+    color: #fff;
+}
+
+ /*
+******************************************************************
+                    Product Nav
+******************************************************************
+*/
+.product-items{
+    width:100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin-bottom: 3%;
+}
+
+.product-item{
+    margin-right: 2%;
+}
+
+.product-item:last-of-type{
+    margin-right: 0;
+}
+
+.product-item a{
+    color: #333;
+    text-decoration: none;
+    font-variant: small-caps;
+}
+
+.product-item a:hover{
+	color: #00c8c8;
+}
+
+ /*
+******************************************************************
+                           CONTROLS
+******************************************************************
+*/
+
+
+.large-info{
+    display: block;
+    color: #ccc;
+}
+.small-info{
+    color: #ccc;
+	display: none;
+}
+
+.large-info:hover, .small-info:hover{
+    color: #01e0e0;
+}
+figure{
+    position: relative;
+}
+
+.icons{
+    color:#ccc;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+}
+
+
+ /*
+******************************************************************
+                       CSS FORM LAYOUT
+******************************************************************
+*/
+main{
+    margin: 2% auto;
+    font-size: 1.5em;
+    margin-top: 3.125em;
+    max-width: 60em;
+    color: grey;
+}
+
+fieldset{
+	width: 100%;
+	padding: 4%;
+}
+
+#formTitle{
+	text-align: left;
+	font-size: 1.7em;
+	color: #4f4d4e;
+}
+
+.contact-form label{
+	min-width: 15em;
+	margin-top: .3em;
+	padding: 0.3em;
+	display: block;
+	text-align: left;
+}
+
+.contact-form ul{
+	margin: 0 auto;
+	/* list-style-position: outside; */
+}
+
+.contact-form li{
+	margin: 0.5em 0;
+}
+
+.firstName, .password, .emailFrenq, .language, .location{
+	width: 49.5%;
+	display: inline-block;
+	padding-right: 1%;
+}
+
+.lastName, .confirmPassword, .phoneNumber, .size{
+	width: 49.5%;
+	display: inline-block;
+	padding-left: 1%;
+}
+
+.agreement{
+	padding: 1.5em 0;
+}
+
+.checkbox, .preferences{
+    text-align: left;
+}
+
+.checkbox{
+	display: grid;
+	grid-template-columns: 33% 33% 33%;
+	grid-template-rows: 20% 20% 20%; 
+	grid-gap: 20px;
+}
+
+.col-1-2{
+	grid-column: 1/2;
+}
+
+.col-2-3{
+	grid-column: 2/3;
+}
+.col-3-4{
+	grid-column: 3/4;
+}
+
+.checkbox h2, .preferences h2{
+	color: #4f4d4e;
+	font-size: 1.2em;
+	padding-top: 1.5em;
+	padding-bottom: 0.5em;
+}
+
+.contact-form input, .contact-form textarea, .contact-form select{
+	width: 100%;
+	border: 0.1em solid #ddd;
+	border-radius: 0.3em;
+}
+
+.contact-form input:focus:valid{
+	box-shadow: 0 0 0.5em #5cd053;
+	border-color: #28921f;
+}
+
+.contact-form input:focus:invalid{
+	box-shadow: 0 0 0.5em #d45252;
+	border-color: #f95f22;
+}
+
+.contact-form input, .contact-form select{
+	vertical-align: middle;
+	height: 3em;
+	padding: 0.5em 0.5em;
+}
+
+.contact-form input[type="checkbox"], .contact-form input[type="radio"]{
+	width: 1.5em;
+	height: 1.5em;
+	padding: 0;
+}
+
+.contact-form input[type="checkbox"]{
+	margin-right: 1%;
+}
+
+.contact-form textarea{
+	padding: 0.8em;
+	resize: none;
+	height: 20rem;
+}
+
+.button{
+    padding-top: 1em;
+}
+
+.button li{
+    text-align: left;
+    width: 40%;
+    padding: 1%;
+}
+
+.button li:last-child{
+	width: 100%;
+}
+
+form input[type="submit"]{
+  	font-variant: small-caps;
+  	font-size: 1.3em;
+  	letter-spacing: 0.2em;
+  	color: #454647;
+  	border: 1.5px #454647 solid;
+  	height: 3.7em;
+  	background-color: #fff;
+  	float: left;
+}
+
+form input[type="submit"]:hover, form input[type="submit"]:focus{
+	outline-style: none;
+	color: #00c8c8;
+	border: 2px #00c8c8 solid;
+}
+
+.policy{
+	float: right;
+}
+
+.service{
+    float: right;
+}
+
+.button a{
+	color: #00c8c8;
+}
+
+.button a:hover{
+	color: #00a8a8;
+}
+
+.formLink{
+	font-weight: bold;
+}
+
+.service h3{
+	font-variant: small-caps;
+    font-weight: bold;
+    font-size: 1.3em;
+    color: #00c8c8;
+    /* float: right; */
+}
+
+/*
+**************************s****************************************
+                       FOOTER
+******************************************************************
+*/
+footer{
+    margin: 2% auto;
+    text-align: center;
+    background-color: #f8f8f8;
+    margin-bottom: 0;
+}
+.footer-link{
+    display: flex;
+    width: 60%;
+    justify-content: space-around;
+    align-content: center;
+    font-size: 0.8em;
+    margin: 0 auto;
+}
+
+.links h1{
+    margin-top: 10%;
+    font-variant: small-caps;
+    font-size: 2em;
+    font-weight: bold;
+    color: #333;
+}
+
+.links a{
+    text-decoration: none;
+    color: #333;
+}
+
+.links a:hover{
+    color: #01e0e0;
+}
+
+.footer-content{
+    display: flex;
+    width: 60%;
+    justify-content: space-around;
+    align-content: center;
+    margin: 2% auto;
+}
+
+.footer-content-left{
+    color: #fff;
+    font-variant: small-caps;
+    font-size: 2em;
+    padding: 3% 7%;
+    background-color: #333;
+}
+
+.footer-content-right{
+    padding: 3% 7%;
+    background-color: #01e0e0;
+}
+
+.social-icons li{
+    margin-right: 1em;
+    display: inline-block;
+}
+
+.social-icons li:last-of-type{
+    margin-right: 0;
+}
+
+.large-social{
+    display: block;
+    color: #fff;
+}
+.small-social{
+    color: #ffffff;
+	display: none;
+}
+
+.large-social:hover, .small-social:hover{
+    color: #ccc;
+}
+
+.footer-black{
+    background-color: #333;
+    color: #999;
+    height: 30px;
+    padding: 0.2em;
+    text-align: center;
+}
+
+@media(max-width: 650px){
+
+    .menu h1, .menu span{
+        margin-right: 0;
+    }
+
+    .page-marque{
+        background-image:url("../img/header-background-mobie.jpg");
+     }
+
+	.icon-switch{
+		display: block;
+		text-align: right;
+	}
+	.menu-item {
+		display: list-item;
+		width: 100%;
+		margin: .5rem 0;
+	}
+	.menu{
+		text-align: center;
+		display: block;
+	}
+	.menu.menu-items .menu-item{
+		display: none;
+	}
+	.menu-items { 
+		padding-top: 4%; 
+	}        
+	.menu-item a:hover {  color: #00c8c8; }   
+	.menu-item:hover{
+		background: #eee;
+	}   
+     .firstName, .password, .emailPeriod, .language, .location{
+       width: 100%;
+       display: inline-block;
+       padding-right: 0;
+    }
+    .lastName, .confirmPassword, .phoneNumber, .size, .emailFrenq{
+           width: 100%;
+           display: inline-block;
+           padding-left: 0;
+    }
+    main{
+           font-size: 60%;
+    }
+    .buttonForm input[type="submit"]{
+           font-size: 40%;
+           padding: 0;
+    }
+    .phoneNumber, .textmessage, .preferences{
+         display: none;
+    }
+
+    .footer-content, .footer-link{
+        width: 100%;
+    }
+}

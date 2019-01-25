@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>AVENUE FASHION REGISTRATION</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/utils.css">
+    <link rel="stylesheet" href="css/style.css">
+    <script defer src="https://use.fontawesome.com/releases/v5.0.9/js/all.js" integrity="sha384-8iPTk2s/jMVj81dnzb/iFR2sdA7u06vHJyyLlAd4snFpCl/SnyUjRrbdJsw1pGIl" crossorigin="anonymous"></script>
+</head>
+<body>
+    <nav class="menu clearfix">
+      <h1>AVENUE<span class="light"> FASHION</span></h1>
+      
+      <ul class="menu-items" >
+        <li class="menu-item"><a href="#">mens</a></li>
+        <li class="menu-item"><a href="#">woments</a></li>
+        <li class="menu-item"><a href="#">the brand</a></li>
+        <li class="menu-item"><a href="#">local stores</a></li>
+        <li class="menu-item"><a href="lookbook.html">look book</a></li>
+      </ul>
+    </nav>
+
+    <header class="page-marque">
+      <h1 id="title">WELCOME<span class="light"> TO AVE</span></h1>
+      <p id="text">REGISTER TODAY</p>
+    </header> 
+
+    <main>
+      <form class="contact-form" action="#" method="post" name="contact-form">
+          <fieldset>
+              <ul class="mainForm clearfix">
+                  <li>
+                      <h2 id="formTitle">REGISTER</h2>
+                  </li>
+                  <li class="firstName">
+                      <label for="firstName">First Name</label>
+                      <input type="text" name="firstName" id="firstName" required >
+                  </li>
+                  <li class="lastName">
+                      <label for="lastName">Last Name</label>
+                      <input type="text" name="lastName" id="lastName" required >
+                  </li>
+                  <li class="email">
+                      <label for="email">Email Address</label>
+                      <input type="email" name="email" id="email" required >
+                  </li>
+                  <li class="password">
+                      <label for="password">Your password</label>
+                      <input type="password" name="password" id="password"  required >
+                  </li>
+                  <li class="confirmPassword">
+                      <label for="password">Confirm password</label>
+                      <input type="password" name="confirm_password" id="confirm_password" required>
+                  </li>
+                  <li class="emailFrenq">
+                      <label>How often would you like an email?</label>
+                        <select name="emailFrenq">
+                        <option value="daily" selected>Daily</option>
+                        <option value="weekly">Weekly</option>
+                        <option value="monthly">Monthly</option>
+                      </select>
+                  </li>
+                  <li class="phoneNumber">
+                      <label for="phone">Phone Number (optional)</label>
+                      <input name="phone" type="text" id="phone" pattern="\d{3}[\-]\d{3}[\-]\d{4}"/>
+                  </li>
+                  <li class="agreement">
+                      <input type="radio" name="agree" value="agree" required> I agree to the terms and conditions of the website. I may opt out at any time.
+                  </li>
+                  <li class="textmessage">
+                      <label>Send us a message (optional)</label>
+                      <textarea name="message" id="message" autocomplete="off" ></textarea>
+                  </li>
+                  <li class="checkbox">
+                    <h2>Sign up for</h2>
+                    <div class="col-1-2" >
+                        <input type="checkbox" >exclusive updates
+                    </div>
+                    <div class="col-2-3" >
+                        <input type="checkbox" >discounts / sales
+                    </div>
+                    <div class="col-3-4" >
+                        <input type="checkbox" >new arrivals
+                    </div>
+                    <div class="col-1-2" >
+                        <input type="checkbox" >contests
+                    </div>
+                    <div class="col-2-3" >
+                        <input type="checkbox" checked>everthing
+                    </div>
+                    <div class="col-3-4" >
+                        <input type="checkbox" >coupons
+                    </div>
+                  </li>
+                  <li class="preferences">
+                      <h2>Preferences (optional)</h2>
+                      <ul class="clearfix">
+                          <li class="language">
+                              <label>Language</label>
+                              <select name="language">
+                                  <option value="english">English</option>  
+                                  <option value="french">Français</option>
+                                  <option value="chinese">中文</option>
+                              </select>
+                          </li>
+                          <li class="size">
+                              <label>Do you prefer a size of clothing?</label>
+                              <select name="size">
+                                  <option value="small">Small</option>  
+                                  <option value="medium">Medium</option>
+                                  <option value="large">Large</option>
+                              </select>
+                          </li>
+                          <li class="location">
+                              <label>Your Store Location</label>
+                              <select name="location">
+                                  <option value="edmonton">Edmonton, AB</option>                          
+                                  <option value="vancouver">Vancouver, BC</option>
+                                  <option value="calgary">Calgary, AB</option>
+                                  <option value="ottawa">Ottawa, ON</option>
+                              </select>
+                          </li>
+                      </ul>
+                  </li>
+                  <li class="button clearfix">
+                      <ul>
+                          <li>
+                          <input type="submit" name="submit" value="create account"/>
+                          </li>
+                          <li class="policy">
+                          <p>By clicking 'Create Account', you agree to our <a href="#">Privacy Policy ⮕</a></p>
+                          </li>
+                          <li class="service">
+                              <h3>need help?</h3>
+                              <p>if you have questions about your account, please contact <a href="mailto:customerservice@ave.ca">customer service</a> 24 hours a day, 7days a week <a class="formLink" href="tel:18885555555">1-888-555-5555</a></p>
+                          </li>
+                      </ul>
+                  </li>
+              </ul>
+          </fieldset>
+      </form>
+    </main>
+
+    <footer>
+    <div class="footer-link">
+      <div class="links">
+        <h1>information</h1>
+        <ul>
+          <li><a href="#">The brand</a></li>
+          <li><a href="#">Local stores</a></li>
+          <li><a href="#">Customer service</a></li>
+          <li><a href="#">Privacy & cookies</a></li>
+          <li><a href="#">Site map</a></li>
+        </ul>
+      </div>
+      <div class="links">
+        <h1>why buy from us</h1>
+        <ul>
+          <li><a href="#">Shipping & returns</a></li>
+          <li><a href="#">Secure shopping</a></li>
+          <li><a href="#">Testimonials</a></li>
+          <li><a href="#">Award winning</a></li>
+          <li><a href="#">Ethical trading</a></li>
+        </ul>
+      </div>
+      <div class="links">
+        <h1>lookbook</h1>
+        <ul>
+          <li><a href="#">Latest posts</a></li>
+          <li><a href="#">Men's lookbook</a></li>
+          <li><a href="#">Women's lookbook</a></li>
+          <li><a href="#">Lookbooks RSS feed</a></li>
+          <li><a href="#">View your lookbook</a></li>
+          <li><a href="#">Delete your lookbook</a></li>
+        </ul>        
+      </div>
+      <div class="links">
+        <h1>contact details</h1>
+        <ul>
+          <li><p>Head Office: Avenue Fashion,<br>180-182 Regent Street, London.</p></li>
+          <li><p>Telephone: 0123-456-789</p></li>
+          <li><p>Email: support@yourwebsite.com</p></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-content">
+        <div class="footer-content-left">
+          <h2>award winner</h2>
+          <span>fashion awards 2016</span>
+        </div>
+        <div class="footer-content-right">
+          <ul class="social-icons clearfix">
+            <li><a href="#" class="large-social"><i class="fab fa-facebook-f fa-3x"></i></a></li>
+            <li><a href="#" class="large-social"><i class="fab fa-twitter fa-3x"></i></a></li>
+            <li><a href="#" class="large-social"><i class="fab fa-instagram fa-3x"></i></a></li>
+            <li><a href="#" class="large-social"><i class="fab fa-pinterest fa-3x"></i></a></li>
+            <li><a href="#" class="small-social"><i class="fab fa-facebook-f fa-2x"></i></a></li>
+            <li><a href="#" class="small-social"><i class="fab fa-twitter fa-2x"></i></a></li>
+            <li><a href="#" class="small-social"><i class="fab fa-instagram fa-2x"></i></a></li>
+            <li><a href="#" class="small-social"><i class="fab fa-pinterest fa-2x"></i></a></li>
+          </ul>
+        </div>
+    </div>
+    <div class="footer-black">
+      <p>&copy; 2016 Avenue Fashion<sup>tm</sup></p>
+    </div>
+  </footer>
+</body>
+</html>
