@@ -7,7 +7,7 @@ Web Designer/Developer
 
 # [Overview]
 <br>
-This Demos are mixed work of school works and my own works
+This Demo are mixed work of school works and my own works
 <br>
 There are 3 folders
 <br>
